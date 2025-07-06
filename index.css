@@ -40,7 +40,6 @@ body{
     position: relative;
     background-color: var(--colorOne);
     color: var(--textWhite);
-    animation: carga 3s both linear;
 }
 
 #openMenu{
