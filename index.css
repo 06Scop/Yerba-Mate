@@ -451,6 +451,7 @@ body::after{
 @keyframes carga {
     0%{
         opacity: 0;
+        z-index: -1;
     }
 
     100%{
