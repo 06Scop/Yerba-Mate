@@ -37,9 +37,26 @@ body{
     width: 100%;
     justify-content: left;
     align-items: center;
-    position: relative;
+    position: sticky;
     background-color: var(--colorOne);
     color: var(--textWhite);
+}
+
+.header__img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.img__logo{
+    margin: auto;
+    width: 1.7rem;
+    height: 2.4rem;
+}
+
+h1{
+    margin: 0 0 0 2rem;
 }
 
 #openMenu{
@@ -425,7 +442,6 @@ body{
 @keyframes carga {
     0%{
         opacity: 0;
-        z-index: -1;
     }
 
     100%{
@@ -434,12 +450,5 @@ body{
 }
 
 @keyframes intro {
-    0%{
-        height: 60%;
-        width: 100%;
-    }
-
-    100%{
-        
-    }
+    
 }
