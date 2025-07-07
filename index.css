@@ -107,6 +107,10 @@ h1{
     z-index: 10;
 }
 
+:root:has(.header #openMenu:checked) .header__img{
+    z-index: -1;
+}
+
 #openMenu:checked ~ .header__nav .nav__list{
     display: block;
     padding: 0;
