@@ -398,6 +398,7 @@ h1{
     .information__title{
         position: absolute;
         top: -1rem;
+        left: 7rem;
     }
 
     .article__questions{
