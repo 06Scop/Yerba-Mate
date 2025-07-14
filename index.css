@@ -24,11 +24,12 @@ body{
     --colorFour: #85c055;
     --colorFive: #cbff7b;;
     --colorBg: #eeeeee;
-    --textArticle: #222222;
+    --textOne: #e8e8e8e8;
+    --textTwo: #222222;
     --textWhite: #dddddd;
     --borderColor: #333333;
     font-family: sans-serif;
-    color: var(--textArticle);
+    color: var(--textOne);
     position: relative;
     z-index: -1;
 }
@@ -74,6 +75,7 @@ h1{
     position: absolute;
     top: -70rem;
     z-index: 10;
+    color: var(--textTwo);
     transition: top 1s linear;
 }
 
@@ -146,7 +148,7 @@ h1{
 
 .article__img{
     border-radius: 0.7rem;
-    filter:drop-shadow(0.5rem 0.5rem 0.1rem var(--textArticle));
+    filter:drop-shadow(0.5rem 0.5rem 0.1rem #000);
 }
 
 .article__important{
@@ -193,6 +195,7 @@ h1{
     text-wrap: pretty;
     width: 100%;
     height: 100%;
+    color: var(--textTwo);
 }
 
 .questions__box:open summary{
@@ -348,7 +351,7 @@ h1{
         width: 30%;
         height: 100%;
         background-color: var(--colorBg);
-        color: var(--textArticle);
+        color: var(--textTwo);
         text-align: center;
         border-bottom: 0.2rem solid var(--borderColor);
         border-left: 0.02rem solid var(--borderColor);

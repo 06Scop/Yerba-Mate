@@ -24,11 +24,12 @@ body{
     --colorFour: #85c055;
     --colorFive: #cbff7b;;
     --colorBg: #eeeeee;
-    --textArticle: #222222;
+    --textTwo: #222222;
+    --textOne: #e8e8e8e8;
     --textWhite: #dddddd;
     --borderColor: #333333;
     font-family: sans-serif;
-    color: var(--textArticle);
+    color: var(--textOne);
     position: relative;
     z-index: -1;
 }
@@ -74,6 +75,7 @@ h1{
     position: absolute;
     top: -70rem;
     z-index: 10;
+    color: var(--textTwo);
     transition: top 1s linear;
 }
 
@@ -123,6 +125,7 @@ h1{
     flex-flow: column nowrap;
     justify-content: center;
     height: 100%;
+    animation: carga 3s both linear;
 }
 
 .section__form{
@@ -256,7 +259,7 @@ h1{
         width: 30%;
         height: 100%;
         background-color: var(--colorBg);
-        color: var(--textArticle);
+        color: var(--textTwo);
         text-align: center;
         border-bottom: 0.2rem solid var(--borderColor);
         border-left: 0.02rem solid var(--borderColor);
@@ -297,4 +300,14 @@ h1{
     .section__form{
         width: 40%;
     }
+}
+
+@keyframes carga{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
 }
