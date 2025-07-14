@@ -139,13 +139,13 @@ h1{
     background-color: var(--colorThree);
     border-radius: 1rem;
     padding: 0.8rem;
-    color: var(--textArticle);
+    color: var(--textTwo);
 }
 
 .form__name{
     font-size: 1.15rem;
     font-weight: 600;
-    color: var(--textArticle);
+    color: var(--textTwo);
     width: 100%;
     padding: 0.2rem;
 }
@@ -188,7 +188,7 @@ h1{
     border-radius: 0.5rem;
     border: none;
     background-color: var(--colorFive);
-    color: var(--textArticle);
+    color: var(--textTwo);
     font-weight: 600;
     font-size: large;
 }
