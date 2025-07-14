@@ -174,9 +174,8 @@ h1{
     display: inline-block;
     width: 80%;
     margin: 0.4rem auto;
-    line-height: 2rem;
+    line-height: 1.4rem;
     text-wrap: pretty;
-    font-size: 1.25rem;
 }
 
 .article__questions{
@@ -256,7 +255,7 @@ h1{
     }
 
     .section__article{
-        width: 140%;
+        width: 95%;
     }
 
     .article__information{
@@ -294,19 +293,17 @@ h1{
     .information__paragraph{
         width: 100%;
         height: 100%;
+        font-size: 1.15rem;
+        line-height: 2rem;
     }
 
     .information__title{
         position: absolute;
-        z-index: 10;
-        top: 3rem;
-        left: 2.5rem;
-        width: 35%;
-        color: #fff;
-        border-radius: 0.7rem;
-        background-color: #000;
-        filter: opacity(0.65);
-        text-decoration: underline;
+        top: 1rem;
+        left: 1rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        width: 45%;
     }
 
     .article__questions{
@@ -326,25 +323,29 @@ h1{
     :root:has(.header #openMenu:checked) .information__title{
         z-index: -1;
     }
+
+    .footer__list{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        justify-content: center;
+        align-items: baseline;
+    }
 }
 
 @media screen and (min-width: 1200px) {
-    body{
-        height: 100%;
-    }
-
     .header{
-        position: sticky;
-        top: -0.03rem;
         z-index: 20;
-        justify-content: space-between;
         align-items: center;
     }
 
     .header__nav{
         display: flex;
-        position: unset;
-        width: 38%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 30;
+        width: 30%;
         height: 100%;
         background-color: var(--colorBg);
         color: var(--textArticle);
@@ -357,19 +358,27 @@ h1{
         display: none;
     }
 
-    .item__url{
-        display: inline-block;
-        color: inherit;
-        padding: 0;
-        text-decoration: none;
-        margin: 0 0 0 3.6rem;
-        font-size: 1.6rem;
+    .nav__list{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
         height: 100%;
     }
 
+    .item__url{
+        display: inline-block;
+        text-decoration: none;
+        color: inherit;
+        font-size: 1.2rem;
+        padding: 0.63rem 1rem;
+        font-weight: 600;
+    }
+
     .url--center{
         border-left: 0.2rem solid var(--borderColor);
+        border-right: 0.2rem solid var(--borderColor);
     }
 
     .nav__list, .list__item{
@@ -389,16 +398,23 @@ h1{
     }
 
     .article__information{
-        margin: 3rem auto 1.5rem auto;
+        margin: 3rem auto 1rem auto;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
         align-items: center;
     }
 
+    .information__paragraph{
+        width: 100%;
+        height: 100%;
+        font-size: 1.25rem;
+        line-height: 2.2rem;
+    }
+
     .information__title{
         position: absolute;
-        top: -1rem;
-        left: 7rem;
+        top: -1.5rem;
+        left: 2.5rem;
     }
 
     .article__questions{
@@ -420,20 +436,6 @@ h1{
     }
 }
 
-@keyframes mover {
-    0%{
-        height: 100dvh;
-        width: 100%;
-        overflow: hidden;
-    }
-
-    100%{
-        height: 100%;
-        width: 100%;
-        overflow: auto;
-    }
-}
-
 @keyframes carga {
     0%{
         opacity: 0;
@@ -442,8 +444,4 @@ h1{
     100%{
         opacity: 1;
     }
-}
-
-@keyframes intro {
-    
 }
